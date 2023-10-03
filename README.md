@@ -1,5 +1,6 @@
 # devops-capability-terraform-training
 ## lab1
+
 - create your own folder to run the project from 
 mkdir dev
 cd dev
@@ -7,10 +8,10 @@ mkdir terraform
 cd terraform
 
 - set the aws key to be able to access the aws cloud.
-export AWS_ACCESS_KEY_ID=<use access key provided on the aws sandbox>
-export AWS_SECRET_ACCESS_KEY=<use access key provided on the aws sandbox>
+    - export AWS_ACCESS_KEY_ID=<use access key provided on the aws sandbox>
+    - export AWS_SECRET_ACCESS_KEY=<use access key provided on the aws sandbox>
 
--Create files main.tf
+- Create files main.tf
 	- In the main.tf define s3 bucket		
 	- set the bucket access control list "acl" to private				
 	- enable versioning for the s3 bucket
@@ -21,11 +22,8 @@ export AWS_SECRET_ACCESS_KEY=<use access key provided on the aws sandbox>
 	- Aws region  “us-east-1”
 
 - Run terraform init
-
 - Run terraform fmt
-
 - Run terraform validate
-
 - Run terraform plan
 
 - Create variables.tf file 
@@ -35,10 +33,10 @@ export AWS_SECRET_ACCESS_KEY=<use access key provided on the aws sandbox>
 
 
 - In the terraform plan pass the name of the bucket name 
-	terraform plan -var="bucket_name=<choose a name>"
+	- terraform plan -var="bucket_name=<choose a name>"
 	
 - Create file lab.tfvars
 	- set the bucket_name ="<username>"
 	
 - Run the terraform plan with the labs.tfvars as an input. 
-	terraform plan -var-file=lab.tfvars
+	- terraform plan -var-file=lab.tfvars
