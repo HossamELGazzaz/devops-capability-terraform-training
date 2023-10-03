@@ -2,10 +2,10 @@
 ## lab1
 
 - create your own folder to run the project from 
-mkdir dev
-cd dev
-mkdir terraform
-cd terraform
+    - mkdir dev
+    - cd dev
+    - mkdir terraform
+    - cd terraform
 
 - set the aws key to be able to access the aws cloud.
     - export AWS_ACCESS_KEY_ID=<use access key provided on the aws sandbox>
